@@ -311,3 +311,5 @@ cdef extern from "tesseract/baseapi.h" namespace "tesseract" nogil:
             cchar_t *GetUnichar(int)
             const OcrEngineMode oem() const
             void set_min_orientation_margin(double)
+            int GetNumberOfTables()
+            # (int, int, int, int) GetTableBoundingBox(int)

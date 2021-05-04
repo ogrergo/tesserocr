@@ -2455,6 +2455,10 @@ cdef class PyTessBaseAPI:
         """
         self._baseapi.set_min_orientation_margin(margin)
 
+
+    def GetNumberOfTables(self):
+        return self._baseapi.GetNumberOfTables()
+
     def __enter__(self):
         return self
 
