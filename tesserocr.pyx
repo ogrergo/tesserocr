@@ -2459,6 +2459,9 @@ cdef class PyTessBaseAPI:
     def GetNumberOfTables(self):
         return self._baseapi.GetNumberOfTables()
 
+    def GetTableBoundingBox(self, int table_id):
+        return self._baseapi.GetTableBoundingBox(table_id)
+
     def __enter__(self):
         return self
 
